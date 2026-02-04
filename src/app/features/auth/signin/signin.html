@@ -1,0 +1,27 @@
+<div class="signin-container">
+    <div class="content-container">
+        <div class="header-container">
+            <img class="logo" src="/assets/images/cruisecode-logo.png" alt="CruiseCode Logo" />
+            <h2>Sign in</h2>
+            <p>Sign in with your email address</p>
+        </div>
+        <form>
+            <div class="col-container">
+                <input pInputText type="text" formControlName="email" placeholder="Email Address" name="email"
+                    required />
+                <input pInputText type="password" formControlName="password" placeholder="Password" name="password"
+                    required />
+            </div>
+            <a>Reset your password?</a>
+            <div class="button-container">
+                <button pButton class="btn btn-primary" (click)="signIn()">
+                    Sign in
+                </button>
+                <div>
+                    <span>Don't have an account?</span>
+                    <a>Sign up now</a>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
